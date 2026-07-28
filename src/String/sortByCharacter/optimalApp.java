@@ -43,3 +43,5 @@ public class optimalApp {
         System.out.println(Arrays.toString(ans));
     }
 }
+// time complexity = O(n + klogk)
+// space complexity = O(k)

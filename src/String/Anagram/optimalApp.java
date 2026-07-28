@@ -38,3 +38,6 @@ public class optimalApp {
         System.out.println(ans);
     }
 }
+
+// time complexity = O(n)
+// space complexity = O(1)
