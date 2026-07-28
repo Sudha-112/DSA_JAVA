@@ -6,6 +6,10 @@ public class longestCommonPrefix {
 
     public static String longCommonPrefix(String[] strs){
 
+        if(strs.length == 0 || strs == null){
+            return "0";
+        }
+
         String first = strs[0];
 
         int n = first.length();
@@ -29,3 +33,7 @@ public class longestCommonPrefix {
         System.out.println(result);
     }
 }
+
+
+//time complexity = O(n*m)
+//space complexity = O(1)

@@ -4,10 +4,7 @@ public class maxNestedDepth {
 
     public static int maxDepth(String s) {
 
-        if (s == "") {
-            return 0;
-        }
-        int max = Integer.MIN_VALUE;
+        int max = 0;
         int level = 0;
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == '(') {
@@ -21,11 +18,7 @@ public class maxNestedDepth {
             }
 
         }
-        if (max < 0) {
-            return 0;
-        } else {
-            return max;
-        }
+       return max;
     }
 
     public static void main(String[] args){
@@ -36,3 +29,5 @@ public class maxNestedDepth {
         System.out.println(ans);
     }
 }
+//time complexity = O(N)
+//space complexity = O(1)

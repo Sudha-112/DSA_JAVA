@@ -24,3 +24,6 @@ public class reverseWords {
         reverseString(s);
     }
 }
+
+//time complexity = O(N)
+//space complexity = O(n) [str array] + O(n) [StringBuilder] = O(n)

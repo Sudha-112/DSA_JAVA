@@ -4,7 +4,7 @@ public class longestPalindromicString {
 
     public static String longPalString(String s){
 
-                if (s == null || s.length() < 1) return "";
+                if (s == null || s.length() == 0) return "0";
 
                 int start = 0, end = 0;
 
@@ -45,3 +45,7 @@ public class longestPalindromicString {
         System.out.println(ans);
     }
 }
+
+
+//time complexity = O(n^2)
+// space complexity = O(1)

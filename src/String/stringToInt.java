@@ -42,3 +42,10 @@ public class stringToInt {
         System.out.println(ans);
     }
 }
+
+
+//Time complexity = O(n)
+// space complexity = O(1)
+
+//Number pehle bun jaata hai (calculation ho jaata hai), uske baad check ho raha hai. Toh agar result ko int rakhein,
+// to calculation (banane) ke time hi overflow ho sakta hai — aur check hone se pehle hi answer galat ban chuka hoga.

@@ -35,3 +35,7 @@ public class romanToInt {
         System.out.println(ans);
     }
 }
+
+
+//time complexity = O(N)
+//space complexity = O(1)  // because no extra space is used everytime

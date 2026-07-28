@@ -15,20 +15,22 @@ public class removeOuterParantheses {
                 }
             }
             if(ch ==')'){
-                level--;
-                if(level>0){
+                if(level>1){
                     result.append(ch);
                 }
+                level--;
             }
         }
         return result.toString();
     }
      public static void main(String[] args){
 
-         String str = "(()(())(()())(()))";
+         String str = "((()())(()))()";
 
          String ans = remove(str);
          System.out.println(ans);
 
      }
 }
+// time complexity = O(N)
+// space complexity = O(N)
