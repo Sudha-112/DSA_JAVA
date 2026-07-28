@@ -37,7 +37,7 @@ public class stringToInt {
     }
 
     public static void main(String[] args){
-        String s = "     -1234";
+        String s = "999999999991234";
         int ans = myAtoi(s);
         System.out.println(ans);
     }
