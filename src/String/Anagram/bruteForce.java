@@ -37,5 +37,5 @@ public class bruteForce {
 }
 
 
-//Time complexity = O(N*NLOGN)
+//Time complexity = O(NLOGN)
 // Space complexity = O(N)
