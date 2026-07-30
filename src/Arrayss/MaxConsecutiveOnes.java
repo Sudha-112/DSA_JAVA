@@ -4,7 +4,7 @@ public class MaxConsecutiveOnes {
 
     public static void main(String[] args) {
 
-        int[] arr = {1, 0, 1, 1, 0,1};
+        int[] arr = {1,1,1,1,0,0};
         int count = 0;
         int maxCount = 0;
 
@@ -15,11 +15,8 @@ public class MaxConsecutiveOnes {
                 count++;
             }
             else{
-               int a = count;
-                if (a > maxCount) {
-                    maxCount = a;
-                }
-                count = 0;
+               maxCount = Math.max(maxCount, count);
+               count = 0;
             }
         }
         int ans = Math.max(count,maxCount);
