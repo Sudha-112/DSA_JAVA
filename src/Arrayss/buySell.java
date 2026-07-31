@@ -9,15 +9,14 @@ public class buySell {
         int sell = 1;
         while(buy < sell && sell < nums.length){
 
-            int Profit = nums[sell] - nums[buy];
-            if(Profit < 0){
-              buy++;
-              sell++;
-            }else if(Profit > maxProfit){
-                maxProfit = Profit;
+            if(nums[buy] < nums[sell]) {
+                int Profit = nums[sell] - nums[buy];
+                maxProfit = Math.max(maxProfit, Profit);
+
                 sell++;
             }
-            else{
+            else {
+                buy = sell;
                 sell++;
             }
 
