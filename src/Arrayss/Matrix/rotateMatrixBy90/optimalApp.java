@@ -55,4 +55,5 @@ public class optimalApp {
     }
 }
 
-//Time complexity = O(
+//Time complexity = O(n^2)
+// space complexity = O(1)
