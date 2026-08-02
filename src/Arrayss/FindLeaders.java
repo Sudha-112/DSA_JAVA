@@ -1,47 +1,38 @@
 package Arrayss;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class FindLeaders {
 
-    public static void Leaders(int[] nums){
+    public static List<Integer> Leaders(int[] nums){
 
+        List <Integer> list = new ArrayList<>();
+        int max = Integer.MIN_VALUE;
         int n = nums.length;
-        System.out.print("The leaders are ");
 
-        if(n==0){
-            System.out.print("None");
-        }else {
-            System.out.print(nums[n - 1] + " ");
-        }
-        int i = n-2;
-        int k = n-1;
 
-        while(i>=0 && i < k && k < nums.length){
-            int count = 0;
-            for(int j = k; j < nums.length; j++){
 
-                if(nums[i] > nums[j]){
-                    k++;
-                    count++;
-                }else{
-                    break;
-                }
+        for(int i = n-1; i >= 0; i--){
+            if(nums[i] > max){
+                list.add(nums[i]);
+                max = nums[i];
             }
-
-            if(count == n-i-1){
-                System.out.print(nums[i]+ " ");
-            }
-
-            i--;
-            k=i+1;
         }
+       list.reversed();
+        return list;
+
+
 
     }
 
     public static void main(String[] args){
 
-        int[] arr = {1,2,3,4};
+        int[] arr = {10,2,3,4,1,0,5};
 
-        Leaders(arr);
+        List<Integer> ans = Leaders(arr);
+        System.out.println(ans);
     }
 
 }
