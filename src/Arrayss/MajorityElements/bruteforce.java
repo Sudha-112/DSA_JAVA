@@ -24,6 +24,10 @@ public class bruteforce {
             if (count > times) {
                set.add(element);
             }
+
+            if(set.size() == 2){
+                break;
+            }
         }
 
         for(int num : set){
@@ -38,3 +42,6 @@ public class bruteforce {
 
     }
 }
+
+//time complexity = O(n^2)
+// space complexity = O(1)
