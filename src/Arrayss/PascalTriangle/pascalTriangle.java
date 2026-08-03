@@ -16,3 +16,7 @@ public class pascalTriangle {
         System.out.println(ans);
     }
 }
+
+
+//time complexity = O(n)
+//space complexity = O(1)
