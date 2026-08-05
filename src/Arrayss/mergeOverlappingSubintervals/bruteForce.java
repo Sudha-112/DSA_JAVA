@@ -9,7 +9,10 @@ public class bruteForce {
     public static List<List<Integer>> merge(int[][] intervals) {
 
         // Sort intervals based on starting point
-        Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
+        Arrays.sort(
+                intervals,
+                (a, b) -> Integer.compare(a[0], b[0])
+        );
 
         List<List<Integer>> ans = new ArrayList<>();
 
@@ -50,3 +53,5 @@ public static void main(String[] args) {
         System.out.println(result);
     }
 }
+//time complexity = O(n^2)
+// space complexity = O(n)
