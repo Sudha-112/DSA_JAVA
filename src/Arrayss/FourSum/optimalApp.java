@@ -5,7 +5,7 @@ import java.util.*;
 public class optimalApp {
 
 
-    public static List<List<Integer>> findQuadruplets(int[] nums){
+    public static List<List<Integer>> findQuadruplets(int[] nums, int target){
 
         int n = nums.length;
 
@@ -23,9 +23,9 @@ public class optimalApp {
 
                 while(k<l){
 
-                    int sum = nums[i] + nums[j] + nums[k] + nums[l];
+                    long sum = (long) nums[i] + nums[j] + nums[k] + nums[l];
 
-                    if(sum == 0){
+                    if(sum == target){
                         list.add(Arrays.asList(nums[i], nums[j], nums[k], nums[l]));
                         k++;
                         l--;
@@ -33,7 +33,7 @@ public class optimalApp {
                         while(k<l && nums[k] == nums[k-1]) k++;
                         while(k<l && nums[l] == nums[l+1]) l--;
 
-                    }else if (sum > 0){
+                    }else if (sum > target){
                         l--;
                     }else{
                         k++;
@@ -48,7 +48,8 @@ public class optimalApp {
     public static void main(String[] args){
 
         int [] arr = {1,0,-1,0,-2,2};
-        List<List<Integer>> ans = findQuadruplets(arr);
+        int target = 0;
+        List<List<Integer>> ans = findQuadruplets(arr,target);
         System.out.println(ans);
     }
 }
