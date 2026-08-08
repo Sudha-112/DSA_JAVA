@@ -38,3 +38,5 @@ public class MajorityElement {
     }
 }
 
+//time complexity = O(n)
+//space complexity = O(1)

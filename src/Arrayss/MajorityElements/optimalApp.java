@@ -44,4 +44,4 @@ public class optimalApp {
 }
 
 //time complexity = O(n)
-// space complexity = O(1)
+// space complexity = O(n)
