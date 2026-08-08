@@ -1,4 +1,4 @@
-package Arrayss;
+package BinarySearch;
 
 public class BinarySearch {
 
@@ -35,3 +35,5 @@ public class BinarySearch {
     }
 
 }
+//time complexity = O(logn)
+//space complexity = O(1)

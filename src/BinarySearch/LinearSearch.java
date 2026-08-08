@@ -1,4 +1,4 @@
-package Arrayss;
+package BinarySearch;
 
 public class LinearSearch {
 
@@ -21,3 +21,6 @@ public class LinearSearch {
         System.out.println(ans);
     }
 }
+
+//time complexity = O(n)
+//space complexity = O(1)
