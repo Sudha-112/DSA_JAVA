@@ -1,4 +1,4 @@
-package Arrayss.MajorityElements;
+package Arrayss.MajorityElements.MajorityElementsII;
 
 import java.util.HashSet;
 

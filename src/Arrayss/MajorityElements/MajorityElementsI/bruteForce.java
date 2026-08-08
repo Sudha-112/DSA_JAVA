@@ -1,8 +1,8 @@
-package Arrayss;
+package Arrayss.MajorityElements.MajorityElementsI;
 
 import java.util.HashMap;
 
-public class MajorityElement {
+public class bruteForce {
 
     public static void majorityEle(int[] arr){
 
@@ -39,4 +39,4 @@ public class MajorityElement {
 }
 
 //time complexity = O(n)
-//space complexity = O(1)
+//space complexity = O(n)
