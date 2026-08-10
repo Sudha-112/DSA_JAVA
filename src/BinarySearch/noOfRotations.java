@@ -7,7 +7,7 @@ public class noOfRotations {
         int n = nums.length;
         int low = 0;
         int high = n-1;
-        int count = 0;
+
 
         while(low  < high){
 

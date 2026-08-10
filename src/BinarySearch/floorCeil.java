@@ -26,7 +26,7 @@ public class floorCeil {
                 si1 = mid1 + 1;
             }
 
-            //find
+            //find floor
 
             int mid2 = si2 + (ei2 - si2)/2;
             if(nums[mid2] <= key){
