@@ -20,6 +20,7 @@ public class optimalApp {
 
     public static int minInMax(int[] bookPages, int students){
 
+        if(bookPages.length < students) return -1;
         int max = Integer.MIN_VALUE;
         for(int pages : bookPages){
             max = Math.max(max, pages);
@@ -55,5 +56,5 @@ public class optimalApp {
     }
 }
 
-//time complexity = O(n * log(sum - min + 1))
+//time complexity = O(n * log(sum - max + 1))
 //space complexity = O(1)

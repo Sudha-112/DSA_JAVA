@@ -46,3 +46,5 @@ public class NthRoot {
         System.out.println(ans);
     }
 }
+//time complexity = O(n * logm)
+//space complexity = O(1)

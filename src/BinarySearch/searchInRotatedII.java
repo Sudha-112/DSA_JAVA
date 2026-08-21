@@ -2,18 +2,19 @@ package BinarySearch;
 
 public class searchInRotatedII {
 
-    public static int search(int[] nums, int target) {
+    public static boolean search(int[] nums, int target) {
         int n = nums.length;
         int si = 0, ei = n - 1;
 
         while (si <= ei) {
             int mid = si + (ei - si) / 2;
 
-            if (nums[mid] == target) return mid;
+            if (nums[mid] == target) return true;
 
             if(nums[si] == nums[mid] && nums[mid] == nums[ei]) {
                  si++;
                  ei--;
+                 continue;
             }
 
             if (nums[si] <= nums[mid]) { // left half sorted
@@ -30,14 +31,14 @@ public class searchInRotatedII {
                 }
             }
         }
-        return -1;
+        return false;
     }
 
     public static void main(String[] args){
         int[] arr = {1,0,1,1,1};
         int target = 0;
 
-        int ans = search(arr, target);
+        boolean ans = search(arr, target);
         System.out.println(ans);
     }
 }

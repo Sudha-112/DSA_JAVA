@@ -59,5 +59,5 @@ public class bruteForce {
     }
 }
 
-//time complexity = O((max - min + 1)*N)
+//time complexity = O((max - min + 1)*n)
 // space complexity = O(1)
