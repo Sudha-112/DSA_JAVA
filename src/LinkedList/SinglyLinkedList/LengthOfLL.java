@@ -7,9 +7,9 @@ public class LengthOfLL {
         if(head == null){
             return 0;
         }
-         int length = 1;
+         int length = 0;
          Node temp = head;
-         while(temp.next != null){
+         while(temp != null){
              length++;
              temp = temp.next;
          }
