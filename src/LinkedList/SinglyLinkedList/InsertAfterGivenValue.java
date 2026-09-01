@@ -31,3 +31,6 @@ public class InsertAfterGivenValue {
         LengthOfLL.printList(head);
     }
 }
+
+//time complexity = O(N)
+//space complexity = O(1)
