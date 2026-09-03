@@ -46,3 +46,6 @@ public class RecursiveApp {
     }
 
 }
+
+//time complexity = O(N)
+//space complexity = O(N)
