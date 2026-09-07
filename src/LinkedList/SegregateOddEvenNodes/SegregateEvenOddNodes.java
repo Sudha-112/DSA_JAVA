@@ -1,4 +1,4 @@
-package LinkedList;
+package LinkedList.SegregateOddEvenNodes;
 
 // Node definition for singly-linked list
 class Node {
@@ -65,12 +65,12 @@ public class SegregateEvenOddNodes {
             if (oddHead == null) return evenHead;
 
             // Combine even and odd lists
-            evenTail.next = oddHead;
+            oddTail.next = evenHead;
 
             // Set end of list to null
-            oddTail.next = null;
+            evenTail.next = null;
 
-            return evenHead;
+            return oddHead;
         }
 
 
