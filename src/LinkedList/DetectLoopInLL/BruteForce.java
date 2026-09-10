@@ -87,5 +87,5 @@ public class BruteForce {
         }
     }
 }
-//time complexity = O(N*logN)
+//time complexity = O(N)
 //space complexity = O(N)
