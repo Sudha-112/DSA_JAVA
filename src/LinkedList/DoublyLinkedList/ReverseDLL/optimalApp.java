@@ -1,27 +1,7 @@
-package LinkedList.DoublyLinkedList.ReverseDLL.OptimalApp;
-
-class Node {
-    int data;
-    Node next;
-    Node prev;
-
-    // Constructor with data, next, and back
-    Node(int data1, Node prev1, Node next1) {
-        data = data1;
-        prev = prev1;
-        next = next1;
-    }
-
-    // Constructor with only data
-    Node(int data1) {
-        data = data1;
-        prev = null;
-        next = null;
-    }
-}
+package LinkedList.DoublyLinkedList.ReverseDLL;
 
 // Solution class that contains core logic
-class Solution {
+class Solution1 {
 
     // Function to convert an array into a doubly linked list
     public Node convertArr2DLL(int[] arr) {
@@ -84,11 +64,12 @@ class Solution {
     }
 }
 
-public class ReverseDLLOP {
+public class optimalApp {
+
     public static void main(String[] args) {
 
         // Create an instance of Solution class
-        Solution sol = new Solution();
+        Solution1 sol = new Solution1();
 
         // Sample array input
         int[] arr = {1, 2, 3, 4, 5};

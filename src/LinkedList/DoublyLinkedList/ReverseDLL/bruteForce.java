@@ -1,4 +1,4 @@
-package LinkedList.DoublyLinkedList.ReverseDLL.BruteForce;
+package LinkedList.DoublyLinkedList.ReverseDLL;
 
 import java.util.*;
 
@@ -20,6 +20,7 @@ class Node {
         next = null;
     }
 }
+
 
 // Solution class with DLL methods
 class Solution {
@@ -65,7 +66,7 @@ class Solution {
         Stack<Integer> st = new Stack<>();
 
         // Pointer to traverse list
-        Node temp = head;
+       Node temp = head;
 
         // Push all node data to stack
         while (temp != null) {
@@ -87,7 +88,9 @@ class Solution {
     }
 }
 
-public class ReverseDLL {
+
+public class bruteForce {
+
     public static void main(String[] args) {
         Solution sol = new Solution();
 
@@ -106,8 +109,7 @@ public class ReverseDLL {
         System.out.println("\nDoubly Linked List After Reversing:");
         sol.print(head);
     }
-
 }
 
-//time complexity = O(2N)
-//space complexity = =O(N)
+//time complexity = O(N)
+//space complexity = O(N)
