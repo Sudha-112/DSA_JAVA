@@ -51,7 +51,7 @@ public class bruteForce {
             current.data = sum % 10;
             carry = sum / 10;
 
-            // If there's no next node and we still have a carry, append a new node
+            // If there's no next node, we still have a carry, append a new node
             if (current.next == null && carry > 0) {
                 current.next = new Node(carry);
                 carry = 0;
