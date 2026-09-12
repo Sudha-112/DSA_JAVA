@@ -25,11 +25,12 @@ class Solution {
     // Public method to handle negative exponents as well
     public double myPow(double x, int n) {
         // If 'n' is negative, take reciprocal of positive exponent result
+        long N = n;
         if (n < 0) {
-            return 1.0 / power(x, -n);
+            return 1.0 / power(x, -N);
         }
         // If 'n' is non-negative
-        return power(x, n);
+        return power(x, N);
     }
 }
 
