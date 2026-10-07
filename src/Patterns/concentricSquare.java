@@ -17,10 +17,10 @@ public class concentricSquare {
                 int top = i;
 
                 //calculate distance from left
-                int left = size - 1 - j;
+                int right = size - 1 - j;
 
                 //calculate distance from right
-                int right = j;
+                int left = j;
 
                 //calculate distance from bottom
                 int bottom = size - 1 - i;
