@@ -4,42 +4,41 @@ import java.util.Stack;
 
 class QueueUsingStack {
 
-    private Stack<Integer> input;   // new elements are pushed here
-    private Stack<Integer> output;  // elements are popped from here
+    private Stack<Integer> s1;   // new elements are pushed here
+    private Stack<Integer> s2;  // elements are popped from here
 
     public QueueUsingStack() {
-        input = new Stack<>();
-        output = new Stack<>();
+        s1 = new Stack<>();
+        s2 = new Stack<>();
     }
 
-    // O(1)
     public void push(int x) {
-        input.push(x);
+        if(s2.isEmpty()){
+            while(!s1.isEmpty()){
+                s2.push(s1.pop());
+            }
+        }
+
+        s1.push(x);
+
+        while(!s2.isEmpty()){
+            s1.push(s2.pop());
+        }
     }
 
     public int pop() {
-        shiftIfNeeded();
-        return output.pop();
+        return s1.pop();
     }
 
     public int peek() {
-        shiftIfNeeded();
-        return output.peek();
+        return s1.peek();
     }
 
-    // O(1)
     public boolean empty() {
-        return input.isEmpty() && output.isEmpty();
+        return s1.isEmpty();
     }
 
-    // Move elements only when output is empty
-    private void shiftIfNeeded() {
-        if (output.isEmpty()) {
-            while (!input.isEmpty()) {
-                output.push(input.pop());
-            }
-        }
-    }
+
 }
 
 public class ImplUsingStack {
