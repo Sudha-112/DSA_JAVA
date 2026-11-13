@@ -41,7 +41,7 @@ class StackUsingQueue{
 
 public class ImplUsingQueue {
 
-    public static void main(String args[]){
+    public static void main(String [] args){
         StackUsingQueue st = new StackUsingQueue();
 
         st.push(4);
